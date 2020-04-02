@@ -1,0 +1,282 @@
+*{
+    /*outline: 2px dashed green; */
+    margin: 0;
+    padding:0;
+    
+}
+/*@media screen and (max-width: 600px) {
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "u"
+    "h"
+    "c"
+    "b"
+    "a"
+    "e"
+    "s"
+    "l"
+    "r";
+}
+
+/* step one - build your grid */
+.container {
+    margin-left: 10%;
+    padding:6%;
+    /* height: 100%; */
+    display: grid;
+    grid-gap: 20px;
+    /* this will be  the same for everyone */
+    grid-template-columns: repeat(12, 1fr);
+    /* this will be customized, based on your grid, use pixels or % */
+    grid-template-rows: auto;
+    /* use letters from step 2 to build the grid */
+    grid-template-areas: 
+        "u u u u h h h h h h h h"
+        ". b b b b a a a a a a ."
+        ". c c c c e e e e e e e"
+        "l l l . . s s s s s s s"
+        ". r r r r r r r r r r r";
+}
+li{
+    font-weight: 300;
+    padding:5px;
+}
+
+.date{
+    font-weight: 500;
+}
+body{
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+ul{
+    list-style: none ;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    padding-top:20px;
+    font-size: 1.5em;
+}
+
+h3{
+    padding-top:49px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "u"
+        "h"
+        "c"
+        "b"
+        "a"
+        "e"
+        "s"
+        "l"
+        "r"
+        ;
+    }
+    
+   header{
+    margin-top: 200px;
+    padding-right: 500px;
+   }
+    .logo {
+        position: absolute;
+        top: 0;
+        left: -10%;
+        width: 100%;
+        height: 50%;
+        z-index: 10;
+   
+  
+    }
+
+    .languages{
+    padding-top: 450px;
+    padding-left: 60px;
+    }
+
+    .contact {
+    padding-top: 400px;
+    padding-right: 500px;
+    left: -100%;
+ 
+    }
+ 
+    .about {
+    padding-left: -5px ;
+    
+    }
+    p{
+        margin-right: 200px;
+        margin-left: -120px;
+    }
+    #rt{
+        padding-top: 330px;
+        padding-left: -60px;
+    }
+   #rc{
+       padding-left: 70px;
+   }
+
+} 
+
+
+
+   
+
+   
+    
+
+
+/* step 1 - assign each of your sections a letter */
+
+.logo{
+  grid-area: u;  
+  margin-top: -90px;
+  width: 60%;
+  margin-left: 150px;
+}
+
+header {
+    grid-area: h;
+    padding-top: 50px;
+    margin-left: -20px;
+}
+p{
+    font-weight: 100;
+    margin-top: 10px;
+}
+.about {
+    grid-area: b;
+    font-size: .9em;
+    width: 55%;
+    margin-left: 15% ;
+    line-height: 18px ;
+    
+}
+
+.education {
+    grid-area: e;
+
+}
+
+.exp {
+    grid-area: a;
+    
+}
+
+.contact {
+    grid-area: c;
+    margin-top:-390px;
+    margin-left: 70px;  
+ }
+
+
+.skills {
+    grid-area: s; 
+}
+
+
+#sleft{
+float: left;
+margin-left:20px;
+margin-top: 1em;
+}
+
+#sright{
+float: left;
+margin-left: 130px;
+margin-top: 1em;
+}
+
+#el{
+    font-weight: 100;
+    margin-top: 10px;
+    line-height: 20px;
+    width: 550px;
+    margin-left: 20px;
+}
+#es{
+    font-weight: 100;
+    margin-top: 10px;
+    line-height: 20px;
+    width: 480px;
+    margin-left: 20px;
+}
+#ci{
+    margin-top: 15px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+#gd{
+  font-size: 25px;
+}
+#time{
+    margin-left: 100px;
+}
+#time2{
+    margin-left: 136px;
+}
+  
+#location{
+    width: 25px;
+    margin-left: -30px;
+ 
+}
+#phone{
+    width: 25px; 
+    margin-left: -30px;
+
+   
+}
+#mail{
+    width: 25px; 
+    margin-left: -30px;
+    
+}
+#m {
+    font-weight: 100;
+}
+.languages{
+    grid-area: l;
+    margin-top: -420px;
+    margin-left: 200px;
+}
+#lp{
+    margin-top: 15px;
+    line-height: 30px;
+    margin-left: 25px;  
+}
+.reactions{
+    grid-area: r;
+    margin-top: -460px;
+    margin-left: 75px;
+
+}
+#rc{
+    width: 30%;
+    margin-left: -100px;
+}
+#ad{
+    margin-left: px;
+}
